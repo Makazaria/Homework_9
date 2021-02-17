@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&subset=cyrillic-ext');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	font-family: 'Cormorant Infant', serif;
+	background: linear-gradient(to bottom, rgba(184,225,252,1) 0%,rgba(169,210,243,1) 10%,rgba(144,186,228,1) 23%,rgba(144,188,234,1) 33%,rgba(144,191,240,1) 42%,rgba(144,191,240,1) 42%,rgba(184,225,252,1) 56%,rgba(107,168,229,1) 72%,rgba(162,218,245,1) 83%,rgba(107,168,229,1) 96%,rgba(107,168,229,1) 96%,rgba(189,243,253,1) 100%);
+}
+
+.main{
+	width: 100%;
+}
+.back-1{
+	width: 100%;
+	height: 100px;
+	background-color: rgba(58, 57, 57, 0.781);
+	box-shadow:inset 0px 0px 15px 5px gray;
+	position: absolute;
+	top: 350px;
+	border-top: 8px solid rgb(146, 103, 23);
+	border-bottom: 10px solid rgb(146, 103, 23);
+}
+.back-2{
+	width: 100%;
+	height: 100px;
+	background-color: rgba(5, 85, 2, 0.781);
+	position: absolute;
+	top: 450px;
+}
+.car{
+	margin: 0 auto;
+	padding:100px 0 0 30px;
+	width: 1000px;
+	height: 480px;
+}
+.car__1{
+	display: inline-block;
+	position: relative;
+	width: 420px;
+	height: 250px;
+	background-color: rgb(233, 2, 2);
+	border: 5px solid rgb(54, 2, 2);
+	border-radius: 10px 21px 8px 8px / 9px 21px 7px 8px;
+	z-index: 1;
+	box-shadow:inset 5px 5px 20px 10px darkred;
+}
+.car__1-1{
+	position: absolute;
+	width: 100%;
+	height: 20px;
+	background-color: orange;
+	left: 0;
+	top: 15px;
+}
+.car__1-2{
+	width: 130px;
+	height: 88px;
+	position: absolute;
+	border: 5px solid darkred;
+	top: 45px;
+	left: 17px;
+	border-radius: 3px;
+	background: linear-gradient(to bottom, rgba(178,178,178,1) 0%,rgba(91,91,91,1) 3%,rgba(178,178,178,1) 6%,rgba(91,91,91,1) 9%,rgba(178,178,178,1) 12%,rgba(91,91,91,1) 15%,rgba(178,178,178,1) 18%,rgba(91,91,91,1) 21%,rgba(178,178,178,1) 24%,rgba(91,91,91,1) 27%,rgba(178,178,178,1) 30%,rgba(91,91,91,1) 33%,rgba(178,178,178,1) 36%,rgba(91,91,91,1) 39%,rgba(178,178,178,1) 42%,rgba(91,91,91,1) 45%,rgba(178,178,178,1) 48%,rgba(91,91,91,1) 50%,rgba(183,183,183,1) 53%,rgba(91,91,91,1) 56%,rgba(183,183,183,1) 59%,rgba(91,91,91,1) 62%,rgba(183,183,183,1) 65%,rgba(91,91,91,1) 68%,rgba(183,183,183,1) 71%,rgba(91,91,91,1) 74%,rgba(183,183,183,1) 77%,rgba(91,91,91,1) 80%,rgba(183,183,183,1) 83%,rgba(91,91,91,1) 86%,rgba(183,183,183,1) 89%,rgba(91,91,91,1) 92%,rgba(183,183,183,1) 95%,rgba(91,91,91,1) 98%,rgba(246,246,246,1) 100%);
+}
+.car__1-3{
+	width: 130px;
+	height: 88px;
+	position: absolute;
+	border: 5px solid darkred;
+	top: 45px;
+	left: 160px;
+	border-radius: 3px;
+	background: linear-gradient(to bottom, rgba(178,178,178,1) 0%,rgba(91,91,91,1) 3%,rgba(178,178,178,1) 6%,rgba(91,91,91,1) 9%,rgba(178,178,178,1) 12%,rgba(91,91,91,1) 15%,rgba(178,178,178,1) 18%,rgba(91,91,91,1) 21%,rgba(178,178,178,1) 24%,rgba(91,91,91,1) 27%,rgba(178,178,178,1) 30%,rgba(91,91,91,1) 33%,rgba(178,178,178,1) 36%,rgba(91,91,91,1) 39%,rgba(178,178,178,1) 42%,rgba(91,91,91,1) 45%,rgba(178,178,178,1) 48%,rgba(91,91,91,1) 50%,rgba(183,183,183,1) 53%,rgba(91,91,91,1) 56%,rgba(183,183,183,1) 59%,rgba(91,91,91,1) 62%,rgba(183,183,183,1) 65%,rgba(91,91,91,1) 68%,rgba(183,183,183,1) 71%,rgba(91,91,91,1) 74%,rgba(183,183,183,1) 77%,rgba(91,91,91,1) 80%,rgba(183,183,183,1) 83%,rgba(91,91,91,1) 86%,rgba(183,183,183,1) 89%,rgba(91,91,91,1) 92%,rgba(183,183,183,1) 95%,rgba(91,91,91,1) 98%,rgba(246,246,246,1) 100%);
+}
+.car__1-4{
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
+	border: 5px solid darkred;
+	top: 45px;
+	right: 89px;
+}
+.car__1-5{
+	position: absolute;
+	width: 100%;
+	height: 12px;
+	background-color: darkred;
+	bottom: 85px;
+	left: 0;
+}
+.car__1-6{
+	position: absolute;
+	width: 57px;
+	height: 27px;
+	left: 0;
+	bottom: 26px;
+	background-color: #fff;
+}
+.car__1-7{
+	width: 330px;
+	height: 26px;
+	position: absolute;
+	background-color: #fff;
+	right: 0;
+	bottom: 48px;
+}
+.car__1-8{
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	bottom: 48px;
+	left: 57px;
+	background: linear-gradient(135deg, rgb(233, 2, 2) 0%,rgb(233, 2, 2) 39%,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 100%);
+}
+.car__1-9{
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	bottom: 26px;
+	left: 57px;
+	background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 58%,rgb(233, 2, 2) 51%,rgb(233, 2, 2) 100%);
+}
+.car__1-10{
+	position: absolute;
+	width: 157px;
+	height: 157px;
+	border-radius: 50%;
+	display: block;
+	border-top:65px solid #000;
+		bottom: -100px;
+	left: 70px;
+	z-index: 3;
+}
+.car__1-11{
+	position: absolute;
+	width: 157px;
+	height: 157px;
+	border-radius: 50%;
+	display: block;
+	border-top:65px solid #000;
+		bottom: -100px;
+	left: 240px;
+	z-index: 3;
+}
+
+.car__1-12{
+	position: absolute;
+	width: 126px;
+	height: 125px;
+	border-radius: 50%;
+	background-color: rgb(39, 37, 37);
+	z-index: 4;
+	left: 85px;
+	bottom: -83px;
+}
+.car__1-13{
+	position: absolute;
+	width: 122px;
+	height: 122px;
+	border-radius: 50%;
+	border-top:3px solid rgb(83, 82, 82);
+	border-left:2px solid rgb(83, 82, 82);
+	left: 87px;
+	bottom: -83px;
+	z-index: 5;
+}
+.car__1-14{
+	position: absolute;
+	width: 83px;
+	height: 83px;
+	border-radius: 50%;
+	border: 5px solid rgba(27, 27, 27, 0.945);
+	z-index: 6;
+	left: 108px;
+	bottom: -65px;
+}
+.car__1-15{
+	z-index: 7;
+	position: absolute;
+	width: 71px;
+	height: 71px;
+	bottom: -59px;
+	left: 114px;
+	border-radius: 50%;
+	background-color: gray;
+}
+.car__1-16{
+	position: absolute;
+	z-index: 8;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 7px dotted rgb(46, 45, 45);
+	bottom: -55px;
+	left: 119px;
+	}
+.car__1-17{
+	position: absolute;
+	width: 43px;
+	height: 43px;
+	border-radius: 50%;
+	bottom: -47px;
+	left: 128px;
+	z-index: 9;
+	background-color: rgb(212, 211, 211);
+}
+.car__1-18{
+	z-index: 10;
+	position: absolute;
+	bottom: -45px;
+	left: 130px;
+	border-radius: 50%;
+	border: 10px solid gray;
+	width: 39px;
+	height: 38px;
+}
+
+.car__1-19{
+	position: absolute;
+	width: 126px;
+	height: 125px;
+	border-radius: 50%;
+	background-color: rgb(39, 37, 37);
+	z-index: 4;
+	left: 255px;
+	bottom: -83px;
+}
+.car__1-20{
+	position: absolute;
+	width: 122px;
+	height: 122px;
+	border-radius: 50%;
+	border-top:3px solid rgb(83, 82, 82);
+	border-left:2px solid rgb(83, 82, 82);
+	left: 257px;
+	bottom: -83px;
+	z-index: 5;
+}
+.car__1-21{
+	position: absolute;
+	width: 83px;
+	height: 83px;
+	border-radius: 50%;
+	border: 5px solid rgba(27, 27, 27, 0.945);
+	z-index: 6;
+	left: 278px;
+	bottom: -65px;
+}
+.car__1-22{
+	z-index: 7;
+	position: absolute;
+	width: 71px;
+	height: 71px;
+	bottom: -59px;
+	left: 284px;
+	border-radius: 50%;
+	background-color: gray;
+}
+.car__1-23{
+	position: absolute;
+	z-index: 8;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 7px dotted rgb(46, 45, 45);
+	bottom: -55px;
+	left: 289px;
+	}
+.car__1-24{
+	position: absolute;
+	width: 43px;
+	height: 43px;
+	border-radius: 50%;
+	bottom: -47px;
+	left: 298px;
+	z-index: 9;
+	background-color: rgb(212, 211, 211);
+}
+.car__1-25{
+	z-index: 10;
+	position: absolute;
+	bottom: -45px;
+	left: 300px;
+	border-radius: 50%;
+	border: 10px solid gray;
+	width: 39px;
+	height: 38px;
+}
+.car__1-26{
+	position: absolute;
+	width: 25px;
+	height: 46px;
+border: 3px solid black;
+border-radius: 5px;
+	right: -12px;
+	bottom: -28px;
+	background: linear-gradient(to bottom, rgba(30,30,30,1) 0%,rgba(30,30,30,1) 46%,rgba(79,79,79,1) 52%,rgba(79,79,79,1) 100%);
+z-index: 11;
+}
+.car__1-27{
+	position: absolute;
+	width: 578px;
+	height: 15px;
+	background-color: rgb(163, 159, 159);
+	top: -25px;
+	right: -15px;
+	border-radius: 4px;
+	border: 3px solid black;
+	border-top: 7px dashed black;
+	z-index: 1;
+	box-shadow: inset 1px 3px 2px rgb(99, 98, 98);
+
+
+}
+.car__1-27-1{
+	position: absolute;
+	width: 578px;
+	height: 20px;
+	border-radius: 5px;
+	background-color: rgb(163, 159, 159);
+	border: 3px solid black;
+	box-shadow: inset 3px -6px 5px rgb(99, 98, 98);
+	top: -25px;
+	left: -3px;
+	z-index: 0;
+}
+.car__1-27-2{
+	position: absolute;
+	width: 38px;
+	height: 8px;
+	background-color: #000;
+	top: 100%;
+	left: 200px;
+}
+.car__1-27-3{
+	position: absolute;
+	width: 38px;
+	height: 8px;
+	background-color: #000;
+	top: 100%;
+	left: 350px;
+}
+.car__1-27-4{
+	position: absolute;
+	width: 38px;
+	height: 8px;
+	background-color: #000;
+	top: 100%;
+	left: 450px;
+}
+
+
+
+.car__2{
+	position: relative;
+	top: 12px;
+	left: 4px;
+	display: inline-block;
+	width: 260px;
+	height: 190px;
+	background-color: red;
+	box-shadow:inset 5px 5px 20px 10px darkred;
+	border: 5px solid rgb(54, 2, 2);
+	border-radius: 66px 7px 7px 16px / 74px 6px 5px 0px;
+	z-index: 2;
+}
+.car__2-1{
+	position: absolute;
+	border: 5px solid darkred;
+	top: 5px;
+	left: 130px;
+	width: 120px;
+	height: 175px;
+	z-index: 3;
+	border-radius: 6px 7px 7px 64px / 8px 6px 5px 20px;
+}
+.car__2-1-1{
+	width: 98px;
+	height: 86px;
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	border-radius: 8px;
+	border: 5px solid darkred;
+	background: linear-gradient(to bottom, rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%);
+}
+.car__2-1-1:hover{
+	background: linear-gradient(to bottom, rgba(10,8,9,1) 0%,rgba(10,14,10,1) 49%,rgba(110,119,116,1) 50%,rgba(174,188,191,1) 65%,rgba(137,132,128,1) 83%,rgba(174,188,191,1) 100%);
+}
+.car__2-1-2{
+	width: 15px;
+	height: 22px;
+	border: 3px solid darkred;
+	position: absolute;
+	bottom: 50px;
+	right: 10px;
+	border-radius: 4px;
+	background: linear-gradient(to right, rgba(232,93,51,1) 2%,rgba(232,93,51,1) 49%,rgba(255,0,0,1) 50%,rgba(191,0,0,1) 50%,rgba(191,0,0,1) 100%);
+}
+.car__2-2{
+	width: 238px;
+	height: 25px;
+	position: absolute;
+	background: linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(255,0,0,1) 90%,rgba(255,0,0,1) 90%,rgba(255,0,0,1)  100%);
+	bottom: 0px;
+	z-index: 2;
+}
+.car__2-3{
+	width: 98px;
+	height: 86px;
+	position: absolute;
+	top: 15px;
+	left: 25px;
+	border-radius: 35px 8px 8px 8px;
+	border: 5px solid darkred;
+	background: linear-gradient(to bottom, rgba(149,149,149,1) 0%,rgba(13,13,13,1) 46%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 53%,rgba(78,78,78,1) 76%,rgba(56,56,56,1) 87%,rgba(27,27,27,1) 100%);
+}
+.car__2-3:hover{
+	background: linear-gradient(to bottom, rgba(10,8,9,1) 0%,rgba(10,14,10,1) 49%,rgba(110,119,116,1) 50%,rgba(174,188,191,1) 65%,rgba(137,132,128,1) 83%,rgba(174,188,191,1) 100%);
+
+}
+.car__2-4{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	border: 4px solid rgb(255, 62, 3);
+	bottom: 5px;
+	left: -10px;
+	border-radius: 5px;
+	box-shadow: -5px 0px 5px yellow  ;
+	background-color: rgba(238, 94, 11, 0.952);
+	z-index: 3;
+}
+.car__2-4:hover{
+	box-shadow: -10px 0px 10px  rgb(255, 187, 0)  ;
+}
+.car__2-5{
+	width: 32px;
+	height: 28px;
+	position: absolute;
+	border: 3px solid darkblue;
+	top: -30px;
+	left: 65px;
+	border-radius: 7px 7px 0px 0px;
+	background-color:rgba(0, 0, 255, 0.774);
+	display: inline-block;
+box-shadow: 0px -3px 3px 1px blue;
+}
+.car__2-5:hover{
+	box-shadow: 0px -5px 5px 3px blue;
+}
+.car__2-5-1{
+	width: 12px;
+	height: 17px;
+position: absolute;
+background-color: rgb(44, 120, 190);
+bottom: 3px;
+left: 3px;
+border-radius: 4px 4px 0px 0px;
+
+}
+.car__2-5-1{
+	position: absolute;
+	width: 40px;
+	height: 6px;
+	background-color: #000;
+	bottom: 0;
+	left: -7px;
+	border-radius: 4px 4px 0px 0px;
+}
+.car__2-6{
+	width: 100px;
+	height: 10px;
+	position: absolute;
+	background-color: #000;
+	bottom: 100%;
+	right: 10px;
+	border-radius: 4px 4px 0px 0px;
+}
+.car__2-7{
+	position: absolute;
+	width: 157px;
+	height: 157px;
+	border-radius: 50%;
+	display: block;
+	border-top:15px solid #000;
+		bottom: -150px;
+	left: 40px;
+	z-index: 3;
+
+}
+.car__3{
+	position: relative;
+	width: 678px;
+	height: 83px;
+	background-color: #000;
+top: -52px;
+	left: 0px;
+	border-radius: 6px;
+	z-index: 0;
+}
+.car__3-1{
+	position: absolute;
+	width: 31px;
+	height: 46px;
+border: 3px solid black;
+border-radius: 5px;
+	left: -7px;
+	top: 28px;
+	background: linear-gradient(to bottom, rgba(30,30,30,1) 0%,rgba(30,30,30,1) 46%,rgba(79,79,79,1) 52%,rgba(79,79,79,1) 100%);
+
+}
+.car__3-2{
+	position: absolute;
+	width: 126px;
+	height: 125px;
+	border-radius: 50%;
+	
+	background-color: rgb(39, 37, 37);
+	z-index: 1;
+	left: 65px;
+	top: 5px;
+}
+.car__3-3{
+	position: absolute;
+	width: 122px;
+	height: 122px;
+	border-radius: 50%;
+	border-top:3px solid rgb(83, 82, 82);
+	border-left:2px solid rgb(83, 82, 82);
+	left: 67px;
+	top: 9px;
+	z-index: 2;
+}
+.car__3-4{
+	position: absolute;
+	width: 83px;
+	height: 83px;
+	border-radius: 50%;
+	border: 5px solid rgba(27, 27, 27, 0.945);
+	z-index: 3;
+	left: 87px;
+	top: 27px;
+
+}
+.car__3-5{
+	z-index: 4;
+	position: absolute;
+	width: 71px;
+	height: 71px;
+	top: 33px;
+	left: 93px;
+	border-radius: 50%;
+	background-color: gray;
+}
+.car__3-6{
+position: absolute;
+z-index: 5;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+border: 7px dotted rgb(46, 45, 45);
+top:39px;
+left: 98px;
+}
+.car__3-7{
+	position: absolute;
+	width: 43px;
+	height: 43px;
+	border-radius: 50%;
+	top: 48px;
+	left: 106px;
+	z-index: 6;
+	background-color: rgb(212, 211, 211);
+}
+.car__3-8{
+	z-index: 7;
+	position: absolute;
+	top: 51px;
+	left: 108px;
+	border-radius: 50%;
+	border: 10px solid gray;
+	width: 39px;
+	height: 38px;
+}
+.car__3-9{
+	position: absolute;
+	width: 150px;
+	height: 20px;
+	top: 100%;
+	left: 200px;
+	border-radius: 0 0 5px 5px;
+	background-color: rgba(19, 18, 18, 0.938);
+}
